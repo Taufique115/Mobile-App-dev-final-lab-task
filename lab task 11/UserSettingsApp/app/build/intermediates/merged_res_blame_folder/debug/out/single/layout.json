@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.university.usersettings.app-mergeDebugResources-30:/layout/activity_main.xml",
+        "source": "com.university.usersettings.app-main-33:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.university.usersettings.app-mergeDebugResources-30:/layout/activity_profile.xml",
+        "source": "com.university.usersettings.app-main-33:/layout/activity_profile.xml"
+    },
+    {
+        "merged": "com.university.usersettings.app-mergeDebugResources-30:/layout/activity_settings_viewer.xml",
+        "source": "com.university.usersettings.app-main-33:/layout/activity_settings_viewer.xml"
+    }
+]

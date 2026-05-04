@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "com.university.usersettings.app-mergeDebugResources-30:/layout/activity_main.xml",
+        "source": "com.university.usersettings.app-main-33:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.university.usersettings.app-mergeDebugResources-30:/layout/activity_profile.xml",
+        "source": "com.university.usersettings.app-main-33:/layout/activity_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\IT\\.gradle\\daemon\\9.1.0\\com.university.usersettings.app-mergeDebugResources-30:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\IT\\.gradle\\daemon\\9.1.0\\com.university.usersettings.app-main-33:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\IT\\.gradle\\daemon\\9.1.0\\com.university.usersettings.app-mergeDebugResources-30:\\layout\\activity_profile.xml",
+        "source": "C:\\Users\\IT\\.gradle\\daemon\\9.1.0\\com.university.usersettings.app-main-33:\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\IT\\.gradle\\daemon\\9.1.0\\com.university.usersettings.app-mergeDebugResources-30:\\layout\\activity_settings_viewer.xml",
+        "source": "C:\\Users\\IT\\.gradle\\daemon\\9.1.0\\com.university.usersettings.app-main-33:\\layout\\activity_settings_viewer.xml"
+    },
+    {
+        "merged": "com.university.usersettings.app-mergeDebugResources-30:/layout/activity_settings_viewer.xml",
+        "source": "com.university.usersettings.app-main-33:/layout/activity_settings_viewer.xml"
+    }
+]

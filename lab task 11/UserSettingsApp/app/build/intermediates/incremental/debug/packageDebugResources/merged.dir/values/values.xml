@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="departments">
+        <item>CSE</item>
+        <item>EEE</item>
+        <item>BBA</item>
+        <item>English</item>
+        <item>Law</item>
+    </string-array>
+    <string-array name="languages">
+        <item>English</item>
+        <item>Bangla</item>
+        <item>Arabic</item>
+        <item>French</item>
+    </string-array>
+    <string-array name="years">
+        <item>1st Year</item>
+        <item>2nd Year</item>
+        <item>3rd Year</item>
+        <item>4th Year</item>
+    </string-array>
+    <color name="black">#FF000000</color>
+    <color name="card_background">#F5F5F5</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="screen_background">#FFFFFF</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="welcome_banner_bg">#E8EAF6</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">UserSettingsApp</string>
+    <string name="edit">Edit</string>
+    <string name="msg_no_settings_or_profile">No portal settings or profile saved yet. Use the main screen or Profile to add your information.</string>
+    <string name="msg_profile_only_no_portal_save">Portal preferences have not been saved yet. Showing your profile information below. Tap Edit to save theme, language, and other options on the main screen.</string>
+    <string name="no_settings_saved">No settings saved. Go back and save your preferences.</string>
+    <string name="profile_setup">Profile Setup</string>
+    <string name="reset_to_default">Reset to Default</string>
+    <string name="save_profile">Save Profile</string>
+    <string name="save_settings">Save Settings</string>
+    <string name="saved_settings">Saved Settings</string>
+    <string name="student_portal_settings">Student Portal Settings</string>
+    <string name="view_saved_settings">View Saved Settings</string>
+    <style name="Theme.UserSettingsApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">#3700B3</item>
+        <item name="colorPrimaryVariant">#270082</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#03DAC5</item>
+        <item name="colorSecondaryVariant">#018786</item>
+        <item name="colorOnSecondary">#000000</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
+</resources>

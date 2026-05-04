@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\Users\\IT\\.gradle\\daemon\\9.1.0\\com.university.usersettings.app-debug-31:\\layout_activity_profile.xml.flat",
+        "source": "C:\\Users\\IT\\.gradle\\daemon\\9.1.0\\com.university.usersettings.app-main-33:\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "com.university.usersettings.app-debug-31:/layout_activity_profile.xml.flat",
+        "source": "com.university.usersettings.app-main-33:/layout/activity_profile.xml"
+    },
+    {
+        "merged": "com.university.usersettings.app-debug-31:/layout_activity_settings_viewer.xml.flat",
+        "source": "com.university.usersettings.app-main-33:/layout/activity_settings_viewer.xml"
+    },
+    {
+        "merged": "C:\\Users\\IT\\.gradle\\daemon\\9.1.0\\com.university.usersettings.app-debug-31:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\IT\\.gradle\\daemon\\9.1.0\\com.university.usersettings.app-main-33:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.university.usersettings.app-debug-31:/layout_activity_main.xml.flat",
+        "source": "com.university.usersettings.app-main-33:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\IT\\.gradle\\daemon\\9.1.0\\com.university.usersettings.app-debug-31:\\menu_menu_main.xml.flat",
+        "source": "C:\\Users\\IT\\.gradle\\daemon\\9.1.0\\com.university.usersettings.app-main-33:\\menu\\menu_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\IT\\.gradle\\daemon\\9.1.0\\com.university.usersettings.app-debug-31:\\layout_activity_settings_viewer.xml.flat",
+        "source": "C:\\Users\\IT\\.gradle\\daemon\\9.1.0\\com.university.usersettings.app-main-33:\\layout\\activity_settings_viewer.xml"
+    }
+]
