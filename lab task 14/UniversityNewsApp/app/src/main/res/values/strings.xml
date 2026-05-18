@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UniversityNewsApp</string>
+    <string name="toolbar_title">University News</string>
+    <string name="tab_posts">Posts</string>
+    <string name="tab_users">Users</string>
+    <string name="search_hint">Search posts by title</string>
+    <string name="retry">Retry</string>
+    <string name="user_id_badge">User #%1$d</string>
+    <string name="post_id_label">Post ID: %1$d</string>
+    <string name="post_detail">Post Detail</string>
+    <string name="user_profile">User Profile</string>
+    <string name="author_section">Author</string>
+    <string name="comments_section">Comments</string>
+    <string name="posts_by_user">Posts by this user</string>
+    <string name="no_comments">No comments yet.</string>
+    <string name="no_posts">No posts found for this user.</string>
+    <string name="invalid_post">Invalid post.</string>
+    <string name="invalid_user">Invalid user.</string>
+    <string name="tap_author_hint">Tap to view profile</string>
+</resources>

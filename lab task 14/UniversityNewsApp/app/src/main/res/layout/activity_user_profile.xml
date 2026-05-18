@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIconTint="@android:color/white"
+        app:title="@string/user_profile"
+        app:titleTextColor="@android:color/white" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ProgressBar
+                android:id="@+id/progressProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/layoutProfileError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvProfileError"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/error_red" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnRetryProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/retry" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutProfileContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvProfileAvatar"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:background="@drawable/bg_avatar_circle"
+                    android:gravity="center"
+                    android:textColor="@color/avatar_text"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvProfileName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/text_primary"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvProfileUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/primary"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvProfileEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvProfilePhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvProfileWebsite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/primary"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvProfileCompany"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/text_primary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvProfileCatchphrase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="14sp"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/posts_by_user"
+                android:textColor="@color/text_primary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/progressUserPosts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/layoutPostsError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvPostsError"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/error_red" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnRetryPosts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/retry" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvPostsEmpty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/no_posts"
+                android:textColor="@color/text_secondary"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvUserPosts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

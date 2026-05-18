@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIconTint="@android:color/white"
+        app:title="@string/post_detail"
+        app:titleTextColor="@android:color/white" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ProgressBar
+                android:id="@+id/progressPost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvPostError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/error_red"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/layoutPostContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/ivPostImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:contentDescription="@string/post_detail"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tvPostTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/text_primary"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvPostBody"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:lineSpacingExtra="4dp"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/author_section"
+                android:textColor="@color/text_primary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/progressAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvAuthorError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/error_red"
+                android:visibility="gone" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:visibility="gone"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/tvAuthorName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_primary"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvAuthorEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/primary"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvAuthorCompany"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/tap_author_hint"
+                        android:textColor="@color/primary_light"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/comments_section"
+                android:textColor="@color/text_primary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/progressComments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvCommentsError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/error_red"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvCommentsEmpty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/no_comments"
+                android:textColor="@color/text_secondary"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvComments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
